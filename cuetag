@@ -144,7 +144,7 @@ main()
 	ntrack=`cueprint -d '%N' "$cue_file"`
 	trackno=1
 
-	if [ $# -ne $ntrack ]; then
+	if [ $# != "$ntrack" ]; then
 		echo "warning: number of files does not match number of tracks"
 	fi
 
